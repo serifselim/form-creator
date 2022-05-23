@@ -9,7 +9,7 @@ const TableItem = ({ index, name, description, createdAt, fields }) => {
             <td>{createdAt}</td>
             <td>
                 <a href='/#' className='bg-primary text-light rounded p-1 pe-auto text-decoration-none'>
-                    Tamamla
+                    Git ->
                 </a>
             </td>
         </tr>
