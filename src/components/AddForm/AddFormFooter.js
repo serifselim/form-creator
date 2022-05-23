@@ -1,9 +1,11 @@
 import React from 'react';
 
-const AddFormFooter = () => {
+const AddFormFooter = ({ title, desc }) => {
+    const isFormFill = title && desc && 'modal';
+
     return (
         <div className="modal-footer">
-            <button className="btn btn-success">Ekle</button>
+            <button className="btn btn-success" data-bs-dismiss={isFormFill}>Ekle</button>
         </div>
     );
 };

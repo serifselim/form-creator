@@ -6,7 +6,7 @@ const Header = () => {
             <div className='container'>
                 <a className="navbar-brand" href="/#">Form <strong>Creator</strong></a>
                 <div className="d-flex">
-                    <button type="button" class="btn btn-success mr-2" data-bs-toggle="modal" data-bs-target="#addForm">
+                    <button type="button" className="btn btn-success mr-2" data-bs-toggle="modal" data-bs-target="#addForm">
                         Yeni Form Oluştur
                     </button>
                     <form className='form-inline'>
