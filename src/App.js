@@ -1,12 +1,16 @@
 import React from 'react';
-import { AddForm, Header } from './components';
-import { Main } from './pages';
+import { Header } from './components';
+import { Main, Form } from './pages';
+import { Routes, Route } from "react-router-dom";
 
 const App = () => {
   return (
     <div>
       <Header />
-      <Main />
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="forms/:formName" element={<Form />} />
+      </Routes>
     </div>
   );
 };

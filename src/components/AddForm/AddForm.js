@@ -16,17 +16,17 @@ const AddForm = ({ addNewFormtoArr }) => {
             createdAt: getCurrentDate(),
             fields: [
                 {
-                    reqired: true,
+                    required: true,
                     name: 'Ad',
                     dataType: 'STRING'
                 },
                 {
-                    reqired: true,
+                    required: true,
                     name: 'Soyad',
                     dataType: 'STRING'
                 },
                 {
-                    reqired: false,
+                    required: false,
                     name: 'Yaş',
                     dataType: 'NUMBER'
                 },

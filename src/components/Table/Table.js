@@ -11,10 +11,7 @@ const Table = ({ forms }) => {
                     <TableItem
                         key={index}
                         index={index}
-                        name={form.name}
-                        description={form.description}
-                        createdAt={form.createdAt}
-                        fields={form.fields}
+                        form={form}
                     />
                 ))}
             </tbody>

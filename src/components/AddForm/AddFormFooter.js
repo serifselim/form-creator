@@ -5,7 +5,7 @@ const AddFormFooter = ({ title, desc }) => {
 
     return (
         <div className="modal-footer">
-            <button className="btn btn-success" data-bs-dismiss={isFormFill}>Ekle</button>
+            <button className="btn btn-success" data-bs-dismiss={isFormFill}>Kaydet</button>
         </div>
     );
 };

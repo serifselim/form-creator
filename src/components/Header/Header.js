@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
             <div className='container'>
-                <a className="navbar-brand" href="/#">Form <strong>Creator</strong></a>
+                <Link className="navbar-brand" to="/">Form <strong>Creator</strong></Link>
                 <div className="d-flex">
                     <button type="button" className="btn btn-success mr-2" data-bs-toggle="modal" data-bs-target="#addForm">
                         Yeni Form Oluştur

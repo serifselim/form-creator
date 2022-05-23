@@ -1,6 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const TableItem = ({ index, name, description, createdAt, fields }) => {
+const TableItem = ({ form, index }) => {
+    const { name, description, createdAt } = form;
+
     return (
         <tr>
             <td>{index + 1}</td>
@@ -8,9 +11,13 @@ const TableItem = ({ index, name, description, createdAt, fields }) => {
             <td>{description}</td>
             <td>{createdAt}</td>
             <td>
-                <a href='/#' className='bg-primary text-light rounded p-1 pe-auto text-decoration-none'>
-                    Git ->
-                </a>
+                <Link
+                    to={`/forms/${name}`}
+                    state={form}
+                    className='bg-primary text-light rounded p-1 pe-auto text-decoration-none'
+                >
+                    Git {'->'}
+                </Link>
             </td>
         </tr>
     );
