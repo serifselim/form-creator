@@ -32,6 +32,8 @@ const AddForm = ({ addNewFormtoArr }) => {
                 },
             ]
         };
+        setName('');
+        setDescription('');
         addNewFormtoArr(obj);
     };
 

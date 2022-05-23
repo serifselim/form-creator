@@ -7,6 +7,16 @@ const getCurrentDate = () => {
     return year + "/" + month + "/" + day;
 };
 
+const getDataFromLocalStorage = (key) => {
+    return JSON.parse(localStorage.getItem(key));
+};
+
+const setDataToLocalStorage = (key, payload) => {
+    localStorage.setItem(key, JSON.stringify(payload));
+};
+
 export {
-    getCurrentDate
+    getCurrentDate,
+    getDataFromLocalStorage,
+    setDataToLocalStorage
 };

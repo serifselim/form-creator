@@ -1,8 +1,6 @@
 import React from 'react';
 
 const TableItem = ({ index, name, description, createdAt, fields }) => {
-    console.log(index);
-
     return (
         <tr>
             <td>{index + 1}</td>
