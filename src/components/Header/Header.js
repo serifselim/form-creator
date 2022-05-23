@@ -5,9 +5,9 @@ const Header = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
             <div className='container'>
-                <Link className="navbar-brand" to="/">Form <strong>Creator</strong></Link>
+                <Link className="navbar-brand logo" to="/">Form <strong>Creator</strong></Link>
                 <div className="d-flex">
-                    <button type="button" className="btn btn-success mr-2" data-bs-toggle="modal" data-bs-target="#addForm">
+                    <button type="button" className="h-25 my-auto btn btn-success mr-2" data-bs-toggle="modal" data-bs-target="#addForm">
                         Yeni Form Oluştur
                     </button>
                     <form className='form-inline'>

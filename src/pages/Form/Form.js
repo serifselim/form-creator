@@ -10,7 +10,7 @@ const Form = () => {
 
             {fields.map(item => (
                 <div className="form-group">
-                    <label htmlFor={item.name}>Email address</label>
+                    <label htmlFor={item.name}>{item.name}</label>
                     <input
                         type={item.dataType}
                         required={item.required}
